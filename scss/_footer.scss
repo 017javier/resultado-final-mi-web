@@ -1,0 +1,93 @@
+.footer{
+    background: $colorazul;
+    .container{
+        .titulos{
+            color: $coloramarillo;
+        }
+        .footer__contenedor{
+            .footer__parrafo{
+                font-size: 1.8rem;
+                text-align: center;
+                color: #fff;
+            }
+            .footer__redes{
+                padding: 100px 0;
+                display: flex;
+                justify-content: space-between;
+                a{
+                    font-size: 1.5rem;
+                    color: #fff;
+                    text-decoration: none;
+                    
+                    i{
+                        font-size: 3rem;
+                        color: $colorrosa;
+                        margin-right: 20px;
+                        &:hover{
+                            cursor: pointer;
+                            // color: $colorcyan;
+                            &:active{
+                                color: $colorcyan;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .footer__copy{
+            text-align: center;
+            color: #fff;
+            border-top: 1px solid #fff;
+            padding: 10px 0;
+        }
+    }
+}
+@media (max-width:968px){
+    .footer{
+        background: $colorazul;
+        .container{
+            .titulos{
+                color: $coloramarillo;
+                font-size: 2rem;
+            }
+            .footer__contenedor{
+                .footer__parrafo{
+                    font-size: 1.4rem;
+                    text-align: center;
+                    color: #fff;
+                    margin: 1rem;
+                }
+                .footer__redes{
+                    padding: 100px 0;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 1.5rem;
+                    a{
+                        font-size: 1rem;
+                        color: #fff;
+                        text-decoration: none;
+                        i{
+                            font-size: 4rem;
+                            margin-right: 20px;
+                        }
+                        
+                    }
+                    .btn-color{
+                        &:hover{
+                            color: $colorazul;
+                        }
+                
+                    }
+                }
+            }
+            .footer__copy{
+                text-align: center;
+                color: #fff;
+                border-top: 1px solid #fff;
+                padding: 10px 0;
+                font-size: .7rem;
+            }
+        }
+    }
+}

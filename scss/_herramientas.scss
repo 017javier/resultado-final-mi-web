@@ -1,0 +1,105 @@
+.herramientas{
+    .container{
+        .titulos{
+            font-size: 2.8rem;
+            text-align: center;
+            padding: 100px 0;
+            color: $colorpurpura;
+        }
+        .herramientas__contenedor{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            .body__herramientas{
+                width:400px;
+                margin: 5px 5px;
+                background:#fff;
+                border: 1px solid $colorpurpura;
+                border-top: none;
+                display:flex;
+                .body__img{
+                    width: 100%;
+                    flex: 1 1 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .body__texto{
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center;
+                    text-align: center;
+                    margin: 4px;
+                    flex: 1 1 100%;
+                    h3{
+                        font-size: 1.2rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:800px){
+    .herramientas{
+        .container{
+            .titulos{
+                font-size: 2rem;
+                text-align: center;
+                
+            }
+        }
+        
+    }
+}
+@media (max-width:578px){
+    .herramientas{
+        .container{
+            .herramientas__contenedor{
+                display: flex;
+                // flex-wrap: wrap;
+                justify-content: center;
+                // flex-direction: row;
+                align-items: center;
+                .body__herramientas{
+                    width: 100%;
+                    margin: 5px 5px;
+                    background:#fff;
+                    border: 1px solid $colorpurpura;
+                    border-top: none;
+                    display:flex;
+    
+                    .body__img{
+                        width: 100%;
+                        flex: 1 1 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .body__texto{
+                        display: flex;
+                        flex-direction: column;
+                        align-self: center;
+                        text-align: center;
+                        margin: 4px;
+                        flex: 1 1 100%;
+                        
+                        h3{
+                            font-size: 1.2rem;
+                        }
+                        p{
+                            font-size: 1rem;
+                            
+                        }
+                    }
+                }
+            }
+
+        }
+        
+    }
+}

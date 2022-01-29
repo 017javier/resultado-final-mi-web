@@ -1,0 +1,106 @@
+@import 'variables';
+@import 'header';
+@import 'hero';
+@import 'acerca';
+@import 'herramientas';
+@import 'portafolio';
+@import 'footer';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+body{
+    font-family: 'Azeret Mono', Poppins, monospace;
+    transition: .5s;
+    font-size: 16px;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.titulos{
+    font-size: 2.8rem;
+    text-align: center;
+    padding: 100px 0;
+    color: $colorpurpura;
+}
+
+.botn {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    color: $colorazul;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 3px solid $colorpurpura;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color:$colorpurpura;
+        transform: translateX(-100%);
+        transition: all .3s;
+        z-index: -1;
+    }
+    &:hover::before {
+        transform: translateX(0);
+    }
+}
+.btn-redes {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    color: $colorazul;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color:$colorcyan;
+        transform: translateX(-100%);
+        transition: all .3s;
+        z-index: -1;
+    }
+    &:hover::before {
+        transform: translateX(0);
+    }
+    
+}
+img , picture , video , iframe , figure{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;        
+    object-position: center center;
+}
+p{
+    font-size: 1rem;
+    font-family:'Poppins';
+}
+
+
