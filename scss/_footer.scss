@@ -35,11 +35,13 @@
                 }
             }
         }
-        .footer__copy{
-            text-align: center;
-            color: #fff;
+        .footer__border{
             border-top: 1px solid #fff;
-            padding: 10px 0;
+            .footer__copy{
+                text-align: center;
+                color: #fff;
+                padding: 10px 0;
+            }
         }
     }
 }
@@ -81,12 +83,37 @@
                     }
                 }
             }
-            .footer__copy{
-                text-align: center;
-                color: #fff;
+            .footer__border{
                 border-top: 1px solid #fff;
-                padding: 10px 0;
-                font-size: .7rem;
+                .footer__copy{
+                    text-align: center;
+                    color: #fff;
+                    padding: 10px 0;
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+}
+@media (max-width:587px){
+    .footer{
+        background: $colorazul;
+        .container{
+            .titulos{
+                color: $coloramarillo;
+                font-size: 2rem;
+            }
+            
+            .footer__border{
+                border-top: 1px solid #fff;
+                .footer__copy{
+                    text-align: center;
+                    color: #fff;
+                    margin: auto;
+                    padding: 10px 0;
+                    font-size: .7rem;
+                    width: 350px;
+                }
             }
         }
     }

@@ -182,7 +182,8 @@
       border-radius: 50%;
       border: 5px solid #ff9b0f; }
   .acerca .container .acerca__contenedor .acerca__texto {
-    width: 40%; }
+    width: 40%;
+    text-align: center; }
     .acerca .container .acerca__contenedor .acerca__texto .acerca__parrafo {
       font-size: 1.3rem;
       font-family: 'poppins';
@@ -210,7 +211,8 @@
         border-radius: 50%;
         border: 5px solid #ff9b0f; }
     .acerca .container .acerca__contenedor .acerca__texto {
-      width: 90%; }
+      width: 90%;
+      text-align: center; }
       .acerca .container .acerca__contenedor .acerca__texto .acerca__parrafo {
         font-size: 1.3rem;
         font-family: 'poppins';
@@ -358,11 +360,12 @@
           cursor: pointer; }
           .footer .container .footer__contenedor .footer__redes a i:hover:active {
             color: #37bee1; }
-  .footer .container .footer__copy {
-    text-align: center;
-    color: #fff;
-    border-top: 1px solid #fff;
-    padding: 10px 0; }
+  .footer .container .footer__border {
+    border-top: 1px solid #fff; }
+    .footer .container .footer__border .footer__copy {
+      text-align: center;
+      color: #fff;
+      padding: 10px 0; }
 
 @media (max-width: 968px) {
   .footer {
@@ -389,12 +392,29 @@
           margin-right: 20px; }
       .footer .container .footer__contenedor .footer__redes .btn-color:hover {
         color: #1e2364; }
-    .footer .container .footer__copy {
-      text-align: center;
-      color: #fff;
-      border-top: 1px solid #fff;
-      padding: 10px 0;
-      font-size: .7rem; } }
+    .footer .container .footer__border {
+      border-top: 1px solid #fff; }
+      .footer .container .footer__border .footer__copy {
+        text-align: center;
+        color: #fff;
+        padding: 10px 0;
+        font-size: .7rem; } }
+
+@media (max-width: 587px) {
+  .footer {
+    background: #1e2364; }
+    .footer .container .titulos {
+      color: #ff9b0f;
+      font-size: 2rem; }
+    .footer .container .footer__border {
+      border-top: 1px solid #fff; }
+      .footer .container .footer__border .footer__copy {
+        text-align: center;
+        color: #fff;
+        margin: auto;
+        padding: 10px 0;
+        font-size: .7rem;
+        width: 350px; } }
 
 * {
   margin: 0;
