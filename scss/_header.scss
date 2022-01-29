@@ -18,7 +18,6 @@
         margin: 0 auto;
         padding: 0 50px;
         .navbar__logo{
-            width: 50px;
             display: flex;
             align-items: center;
             cursor: pointer;
@@ -62,7 +61,7 @@
             padding: 0;
             .navbar__logo{
                 padding-left: 25px;
-                width:10%;
+                cursor: pointer;
             }
             .navbar__menu{
                 display: flex;
